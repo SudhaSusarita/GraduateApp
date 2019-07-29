@@ -33,7 +33,7 @@ namespace GraduateApp
         static void Main(string[] args) {
             try
             {
-                var reader = new StreamReader(File.OpenRead(@"E:\C#\Customer Information.csv"));
+                var reader = new StreamReader(File.OpenRead(@"E:\C#\Customer Information.csv"));  // change to original location to avoid file not found exception
                 List<string> listRows = new List<string>();
                 List<Customer> customerList = new List<Customer>();
                 List<Vehicle> vehicleList = new List<Vehicle>();
